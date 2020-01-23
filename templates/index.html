@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Test</title>
+
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <hr/>
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            CPU
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Usage : <span id="cpu-usage">-</span>%</li>
+            <li class="list-group-item">Frequency : <span id="cpu-freq">-</span>MHz</li>
+            <li class="list-group-item">Minimum Frequency : <span id="cpu-min-freq">-</span>MHz</li>
+            <li class="list-group-item">Maximum Frequency : <span id="cpu-max-freq">-</span>MHz</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            Operating System
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Platform : <span id="os-platform">-</span></li>
+            <li class="list-group-item">Distro : <span id="os-distro">-</span></li>
+            <li class="list-group-item">Kernel : <span id="os-kernel">-</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <script src="../static/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/socket.io.min.js"></script>
+    <script type="text/javascript" src="../static/app.js"></script>
+
+  </body>
+</html>
